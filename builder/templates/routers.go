@@ -44,6 +44,9 @@ func runServer(router *gin.Engine) {
 	srv := &http.Server{
 		Addr:    fmt.Sprintf("%v:%d", global.GlobalC.System.Host, global.GlobalC.System.Port),
 		Handler: router,
+		WriteTimeout: 60 * time.Second,
+		ReadTimeout:  60 * time.Second,
+		MaxHeaderBytes: 1 << 20,
 	}
 	fmt.Println("[Server Address]: ", fmt.Sprintf("127.0.0.1:%d", global.GlobalC.System.Port))
 
