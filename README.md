@@ -193,7 +193,7 @@ var (
 ### 1. 安装ginbuilder
 
 ```shell
-go install github.com/coderitx/ginbuilder
+go install github.com/sclingx/ginbuilder
 ```
 
 ### 2. 创建项目
