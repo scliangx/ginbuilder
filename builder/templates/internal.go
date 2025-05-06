@@ -38,7 +38,6 @@ func InitDB(c internal_config.MysqlConfig) {
 		zap.S().Errorf("connect mysql error: %v", err)
 		return
 	}
-	db.Model(true)
 	global.DB = db
 	return
 }`
