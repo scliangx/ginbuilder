@@ -7,7 +7,7 @@ import (
 )
 
 const (
-	AppNamePlaceholder = "{{.pkgname}}"
+	Placeholder = "{{.PLACEHOLDER}}"
 )
 
 // IsExists 判断文件是否存在
@@ -42,7 +42,7 @@ func GetGoVersion() string {
 // ReplaceAppNameTemplate 替换模版中的appname
 func ReplaceAppNameTemplate(template string, appName string) string {
 	tempStr := strings.Replace(template, "#", "`", -1)
-	return strings.Replace(tempStr, AppNamePlaceholder, appName, -1)
+	return strings.Replace(tempStr, Placeholder, appName, -1)
 }
 
 // WriteToFile 写入文件

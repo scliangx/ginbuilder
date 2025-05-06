@@ -3,7 +3,7 @@ package templates
 var InitRoutersTemplate = `package routers
 
 import (
-	"{{.pkgname}}/global"
+	"{{.PLACEHOLDER}}/global"
 	"context"
 	"fmt"
 	"go.uber.org/zap"
@@ -72,7 +72,7 @@ func runServer(router *gin.Engine) {
 
 var HelloRouterTemplate = `package routers
 
-import "{{.pkgname}}/apps/apis"
+import "{{.PLACEHOLDER}}/apps/apis"
 
 func (r *RouterGroup) ApiHelloGroup(){
 	helloApi := apis.ApiGroupApi.HelloApi

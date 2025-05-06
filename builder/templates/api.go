@@ -3,7 +3,7 @@ package templates
 var ApiTemplate = `package apis
 
 import (
-	"{{.pkgname}}/apps/apis/hello"
+	"{{.PLACEHOLDER}}/apps/apis/hello"
 )
 
 type ApiGroup struct{
@@ -17,10 +17,10 @@ var HelloApiTemplate = `package hello
 
 
 import (
-	"{{.pkgname}}/common/responsex"
-	"{{.pkgname}}/models"
-	"{{.pkgname}}/common/errorx"
-	"{{.pkgname}}/apps/service"
+	"{{.PLACEHOLDER}}/common/responsex"
+	"{{.PLACEHOLDER}}/models"
+	"{{.PLACEHOLDER}}/common/errorx"
+	"{{.PLACEHOLDER}}/apps/service"
 	"github.com/gin-gonic/gin"
 )
 

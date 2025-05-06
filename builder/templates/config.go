@@ -15,7 +15,7 @@ log:
   level: info
   format: json
   path: ./logs
-  filename: {{.pkgname}}.log
+  filename: {{.PLACEHOLDER}}.log
   file_maxsize: 200
   file_max_backups: 3
   max_age: 3
@@ -34,7 +34,7 @@ redis:
 var ConfigBaseTemplate = `package config
 
 import (
-	"{{.pkgname}}/config/internal_config"
+	"{{.PLACEHOLDER}}/config/internal_config"
 	"fmt"
 	"gopkg.in/yaml.v2"
 	"io/ioutil"

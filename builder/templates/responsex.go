@@ -3,7 +3,7 @@ package templates
 var ResponsexTemplate = `package responsex
 
 import (
-	"{{.pkgname}}/common/errorx"
+	"{{.PLACEHOLDER}}/common/errorx"
 	"github.com/gin-gonic/gin"
 	"net/http"
 )

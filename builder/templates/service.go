@@ -3,8 +3,8 @@ package templates
 var HelloServiceTemplate = `package service
 
 import (
-	"{{.pkgname}}/common/errorx"
-	"{{.pkgname}}/models"
+	"{{.PLACEHOLDER}}/common/errorx"
+	"{{.PLACEHOLDER}}/models"
 )
 
 type HelloResponse struct {

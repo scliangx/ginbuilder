@@ -33,7 +33,7 @@ func RenderFile(projectName, packageName, projectPath string) (string, error) {
 	fs = path.Join(basepath, "config")
 	tools.IsExistsDirectoryAndCreate(fs)
 	tools.WriteToFile(path.Join(fs, "config.go"), tools.ReplaceAppNameTemplate(templates.ConfigBaseTemplate, packageName))
-	tools.WriteToFile(path.Join(fs, "config.yaml"), tools.ReplaceAppNameTemplate(templates.ConfigYamlTemplate, packageName))
+	tools.WriteToFile(path.Join(fs, "config.yaml"), tools.ReplaceAppNameTemplate(templates.ConfigYamlTemplate, projectName))
 
 	fs = path.Join(fs, "internal_config")
 	tools.IsExistsDirectoryAndCreate(fs)

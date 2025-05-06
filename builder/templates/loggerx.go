@@ -3,7 +3,7 @@ package templates
 var LoggerxTemplate = `package logx
 
 import (
-	"{{.pkgname}}/config/internal_config"
+	"{{.PLACEHOLDER}}/config/internal_config"
 	"fmt"
 	"os"
 	"path/filepath"

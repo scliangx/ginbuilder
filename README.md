@@ -56,7 +56,7 @@
 package routers
 
 import (
-	"{{.pkgname}}/global"
+	"{{.PLACEHOLDER}}/global"
 	"context"
 	"fmt"
 	"go.uber.org/zap"
@@ -111,7 +111,7 @@ func runServer(router *gin.Engine) {
 package responsex
 
 import (
-	"{{.pkgname}}/common/errorx"
+	"{{.PLACEHOLDER}}/common/errorx"
 	"github.com/gin-gonic/gin"
 	"net/http"
 )

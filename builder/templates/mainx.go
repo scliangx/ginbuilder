@@ -3,11 +3,11 @@ package templates
 var MainTemplate = `package main
 
 import (
-	"{{.pkgname}}/apps/routers"
-	"{{.pkgname}}/common/logx"
-	"{{.pkgname}}/config"
-	"{{.pkgname}}/global"
-	//"{{.pkgname}}/internal"
+	"{{.PLACEHOLDER}}/apps/routers"
+	"{{.PLACEHOLDER}}/common/logx"
+	"{{.PLACEHOLDER}}/config"
+	"{{.PLACEHOLDER}}/global"
+	//"{{.PLACEHOLDER}}/internal"
 	"go.uber.org/zap"
 )
 

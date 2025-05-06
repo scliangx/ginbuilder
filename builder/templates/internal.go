@@ -3,8 +3,8 @@ package templates
 var InitMysqlTemplate = `package internal
 
 import (
-	"{{.pkgname}}/config/internal_config"
-	"{{.pkgname}}/global"
+	"{{.PLACEHOLDER}}/config/internal_config"
+	"{{.PLACEHOLDER}}/global"
 	"fmt"
 	"go.uber.org/zap"
 	"gorm.io/driver/mysql"
@@ -46,8 +46,8 @@ func InitDB(c internal_config.MysqlConfig) {
 var InitRedisTemplate = `package internal
 
 import (
-	"{{.pkgname}}/config/internal_config"
-	"{{.pkgname}}/global"
+	"{{.PLACEHOLDER}}/config/internal_config"
+	"{{.PLACEHOLDER}}/global"
 	"context"
 	"fmt"
 	"github.com/go-redis/redis/v8"

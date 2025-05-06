@@ -3,7 +3,7 @@ package templates
 var GlobalFileTempalte = `package global
 
 import (
-	"{{.pkgname}}/config"
+	"{{.PLACEHOLDER}}/config"
 	"github.com/go-redis/redis/v8"
 	"gorm.io/gorm"
 )
